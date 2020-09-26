@@ -19,6 +19,12 @@ const AppContainer = ({ darkMode, setDarkMode }: AppContainer) => {
   return (
     <AppStack.Navigator
       screenOptions={{
+        headerBackTitleStyle: {
+          fontFamily: "Epilogue-Regular"
+        },
+        headerTitleStyle: {
+          fontFamily: "Epilogue-Regular"
+        },
         headerStyle: {
           backgroundColor: theme.colors.mainBackground
         },

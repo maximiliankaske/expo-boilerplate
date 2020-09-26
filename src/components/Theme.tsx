@@ -9,14 +9,12 @@ import {
 import { StatusBar } from "expo-status-bar";
 
 const palette = {
-  yellowPrimary: "#FFBD1E",
-  redPrimary: "#E07159",
-  purplePrimary: "#965E8E",
-  greenPrimary: "#A3C76C",
-  bluePrimary: "#43959e",
+  redPrimary: "#FF4000",
+  beigePrimary: "#FAAA8D",
+  bluePrimary: "#50B2C0",
 
-  black: "#0B0B0B",
-  white: "white"
+  black: "#201E1F",
+  white: "#FEEFDD"
 };
 
 const theme = createTheme({
@@ -24,11 +22,9 @@ const theme = createTheme({
     mainBackground: palette.white,
     mainForeground: palette.black,
     primary: palette.redPrimary,
-    secondary: palette.greenPrimary,
-    tercery: palette.purplePrimary,
-    quaternary: palette.bluePrimary,
+    secondary: palette.bluePrimary,
     baseText: palette.black,
-    baseTitle: palette.greenPrimary
+    baseTitle: palette.bluePrimary
   },
   spacing: {
     xs: 4,
@@ -78,11 +74,9 @@ const darkTheme = {
     mainBackground: palette.black,
     mainForeground: palette.white,
     primary: palette.redPrimary,
-    secondary: palette.yellowPrimary,
-    tercery: palette.yellowPrimary,
-    quaternary: palette.purplePrimary,
+    secondary: palette.beigePrimary,
     baseText: palette.white,
-    baseTitle: palette.yellowPrimary
+    baseTitle: palette.redPrimary
   }
 };
 
