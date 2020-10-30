@@ -1,22 +1,23 @@
-# Reanimated v2 (alpha) example
+# Expo SDK 39 Boilerplate
 
-<p>
-  <!-- iOS -->
-  <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  <!-- Android -->
-  <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  <!-- Web -->
-</p>
+Lightweight app with very basic features.
 
-Experiment with Reanimated 2 (alpha) in SDK 39.
+If you are using Expo, you should be familiar with `react-navigation` and `react-native-reanimated`. To round up the trifecta, `@shopify/restyle` is added in order to manage theming and styling in a more consistent way.
 
-## 🚀 How to use
+## 👷 For whom?
 
-> `npx create-react-native-app my-app -t with-reanimated2`
+- everybody who just wants to start coding.
+- typescript lovers.
+- expo fans.
 
+## ✨ What's inside?
+
+- [`react-native-reanimated`](https://docs.swmansion.com/react-native-reanimated/docs/) (v2 apha ⚗)
+- [`@shopify/restyle`](https://github.com/Shopify/restyle)
+- [`react-navigation`](https://reactnavigation.org)
+
+## 🚀 How to use?
+
+- Clone repository
 - Run `yarn` or `npm install`
 - Run [`expo start`](https://docs.expo.io/versions/latest/workflow/expo-cli/), try it out.
-
-## 📝 Notes
-
-- [react-native-reanimated v2 docs](https://docs.swmansion.com/react-native-reanimated/)
