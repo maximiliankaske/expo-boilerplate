@@ -1,6 +1,6 @@
 import React, { ReactElement, useCallback, useEffect, useState } from "react";
 import AsyncStorage from "@react-native-community/async-storage";
-import { AppLoading } from "expo";
+import AppLoading from "expo-app-loading";
 import { Asset } from "expo-asset";
 import * as Font from "expo-font";
 import { InitialState, NavigationContainer } from "@react-navigation/native";
@@ -23,7 +23,7 @@ const usePromiseAll = (
 const useLoadAssets = (assets: number[], fonts: FontSource): boolean => {
   const [ready, setReady] = useState(false);
   usePromiseAll(
-    [Font.loadAsync(fonts), ...assets.map(asset => Asset.loadAsync(asset))],
+    [Font.loadAsync(fonts), ...assets.map((asset) => Asset.loadAsync(asset))],
     () => setReady(true)
   );
   return ready;
@@ -59,7 +59,8 @@ const LoadAssets = ({ assets, fonts, children }: LoadAssetsProps) => {
     }
   }, [isNavigationReady]);
   const onStateChange = useCallback(
-    state => AsyncStorage.setItem(NAVIGATION_STATE_KEY, JSON.stringify(state)),
+    (state) =>
+      AsyncStorage.setItem(NAVIGATION_STATE_KEY, JSON.stringify(state)),
     []
   );
   if (!ready || !isNavigationReady) {

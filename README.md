@@ -1,4 +1,4 @@
-# Expo SDK 39 Boilerplate
+# Expo SDK 40 Boilerplate
 
 Lightweight app with very basic features.
 
